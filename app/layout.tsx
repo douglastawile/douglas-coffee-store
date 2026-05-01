@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "next-themes";
 import { CartProvider } from "@/context/CartContext";
 import { BackToTopButton } from "@/components/shared/BackToTopButton";
@@ -68,7 +67,6 @@ export default function RootLayout({
             {children}
             <BackToTopButton />
             <Toaster position="bottom-right" theme="system" />
-            {process.env.NODE_ENV === "production" && <Analytics />}
           </CartProvider>
         </ThemeProvider>
       </body>
