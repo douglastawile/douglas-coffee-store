@@ -34,11 +34,12 @@ export default function AboutPage() {
             <div className="grid gap-10 lg:grid-cols-[360px_1fr] items-center">
               <div className="rounded-[2rem] overflow-hidden border border-border bg-card shadow-sm">
                 <Image
-                  src="/placeholder-user.jpg"
+                  src="/code.jpg"
                   alt="Douglas Tawile"
                   width={720}
                   height={720}
                   className="h-full w-full object-cover"
+                  priority
                 />
               </div>
 
